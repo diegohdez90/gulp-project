@@ -1,0 +1,9 @@
+<div class="container">
+
+	<form name="confirmUser" ng-submit="form.confirmUser(confirmUser)">
+		<label>Email<input type="email" name="email" value="" placeholder="Email" ng-model="user.email"></label><span>{{ form.emailError }}</span><br>
+		<label>Password<input type="password" name="password" value="" placeholder="Password" ng-model="user.password" ng-minlength="6"></label><span>{{ form.passwordError }}</span><br>	
+		<input type="submit" name="submit" ng-model="submit" value="{{ form.submitForm }}">
+	</form>
+	<p class="text-center">{{ form.Error500 }}</p>
+</div>
