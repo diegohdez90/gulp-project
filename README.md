@@ -14,16 +14,17 @@ Proyecto Restangular con Gulp-Angular
 2. Ubicarse en la carpeta donde descargaste el codigo fuente.
 3. Testear codigo fuente con el siguiente comando
 
-...
+```
 npm test
-...
+```
 
 
 4. Ejecutar proyecto.
 
-...
+```
 gulp serve
-...
+```
+
 
 5. En el navegador ir al sitio [localhost:3000/#/formulario]:localhost:3000/#/formulario
 
