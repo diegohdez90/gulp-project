@@ -26,7 +26,7 @@ gulp serve
 ```
 
 
-5. En el navegador ir al sitio [localhost:3000/#/formulario](localhost:3000/#/formulario)
+5. En el navegador ir al sitio [http://localhost:3000/#/formulario](localhost:3000/#/formulario)
 
 ## Archivos creados
 
