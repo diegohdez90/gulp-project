@@ -1,5 +1,5 @@
 export class FormController {
-  constructor (Restangular, $window) {
+  constructor (Restangular) {
     'ngInject';
     this.Restangular = Restangular;
     this.api = 'http://front.virk.io/api/v1/login/usercard';
@@ -24,12 +24,10 @@ export class FormController {
 						this.passwordError = '';
 						this.user.password = form.password.$viewValue;
 						this.Restangular.oneUrl('usercard',this.api).get(this.user).then(function(response){
-							console.log(response);
+							self.success = response.data.message;
+							self.submitForm = 'Enviar';
 						},function errorCallback(response){
-							console.log(response);
-							if(response.status=500){
-								self.Error500=response.data.message;
-							}
+							self.Error500=response.data.message;
 							self.submitForm = 'Enviar';
 						});
 					}else{
